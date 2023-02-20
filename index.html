@@ -1,569 +1,545 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-      <!--=========GoogleFont==========-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 
-      <!--=========CSS==========-->
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
-      
-      <!--dis iz kanseled bay jeykat-->
-      <!--link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"-->
-      <title>OCCoin</title>
-      <!--=========Fivicon==========-->
-      <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico')}}">
-      
-  </head>
-  <body class="flamy-theme">
-      <!--=========Header==========-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--=========GoogleFont==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <!--=========CSS==========-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+
+    <!--dis iz kanseled bay jeykat-->
+    <!--link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"-->
+    <title>OCCoin</title>
+    <!--=========Fivicon==========-->
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+</head>
+
+<body class="flamy-theme">
+    <!--=========Header==========-->
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="/" class="logo" > OC <span> Coin </span></a>
-        
-          <div class="btn-group">
-            <button class="theme-btn theme-btn-mobile flame" >
+        <div class="container">
+            <nav class="navbar">
+                <a href="/" class="logo"> OC <span> Coin </span></a>
+
+                <div class="btn-group">
+                    <button class="theme-btn theme-btn-mobile flame">
               <ion-icon name="snow-outline" class="snowy"></ion-icon>
               <ion-icon name="flame" class="flamy"></ion-icon>
             </button>
-            <button class="nav-menu-btn">
+                    <button class="nav-menu-btn">
               <ion-icon name="menu-outline"></ion-icon>
             </button>
-          </div>
-          <div class="flex-wrapper">
-            <ul class="desktop-nav">
-              <li>
-                <a href="/" class="nav-link">
+                </div>
+                <div class="flex-wrapper">
+                    <ul class="desktop-nav">
+                        <li>
+                            <a href="/" class="nav-link">
                   OCCoin
                 </a>
-              </li>
-              <li>
-                <a href="/" class="nav-link">
+                        </li>
+                        <li>
+                            <a href="/" class="nav-link">
                   White Paper
                 </a>
-              </li>
-              <li>
-                <a href="/" class="nav-link">
+                        </li>
+                        <li>
+                            <a href="/" class="nav-link">
                   Road Map
                 </a>
-              </li>
-              <li>
-                <a href="/" class="nav-link">
+                        </li>
+                        <li>
+                            <a href="/" class="nav-link">
                   About Us
                 </a>
-              </li>
-            </ul>
-            <button class="theme-btn theme-btn-desktop flame" >
+                        </li>
+                    </ul>
+                    <button class="theme-btn theme-btn-desktop flame">
               <ion-icon name="snow-outline" class="snowy"></ion-icon>
               <ion-icon name="flame" class="flamy"></ion-icon>
             </button>
 
-           </div>
-          <div class="mobile-nav">
-            <button class="nav-close-btn">
+                </div>
+                <div class="mobile-nav">
+                    <button class="nav-close-btn">
               <ion-icon name="close-circle-outline"></ion-icon>
             </button>
-            <div class="wrapper">
-              <p class="h3 nav-title">Main Menu</p>
-              <ul>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">OCCoin</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">White Paper</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Road Map</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p class="h3 nav-title">Topics</p>
-              <ul>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">1</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">2</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">3</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">4</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+                    <div class="wrapper">
+                        <p class="h3 nav-title">Main Menu</p>
+                        <ul>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">OCCoin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">White Paper</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Road Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="h3 nav-title">Topics</p>
+                        <ul>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-      <!--=========coin-part==========-->
-      <div class="coin-part">
-        <div class="container">
-          <div class="left">
-            <h1 class="h1">
-              Wellcome<br>
-              <b>To The Our World</b>
-            </h1>
-            <button class="btn-group">
+        <!--=========coin-part==========-->
+        <div class="coin-part">
+            <div class="container">
+                <div class="left">
+                    <h1 class="h1">
+                        Wellcome<br>
+                        <b>To The Our World</b>
+                    </h1>
+                    <button class="btn-group">
               <a href="#" class="btn btn-primary">Contact Us</a>
               <a href="#" class="btn btn-secondary">About Us</a>
             </button>
-          </div>
-          <div class="right">
-            <div class="pattern-bg"></div>
-            <div class="img-box">
-              <img src="{{url_for("static", filename="images/android-chrome-512x512.png")}}" alt="" class="coin-part-img"></img>
-              <div class="shape shape-1"></div>
-              <div class="shape shape-2"></div>
+                </div>
+                <div class="right">
+                    <div class="pattern-bg"></div>
+                    <div class="img-box">
+                        <img src="static/images/android-chrome-512x512.png" alt="" class="coin-part-img">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="main">
-                  <!--=========White Paper==========-->
-                  <div class="white-paper">
-                    <h2 class="h2">
-                      White Paper
-                    </h2>
-                    <h3 class="h3">
-                      Symbol <br> (OCC) 
-                      <br>
-                      Name <br> (OCCoin)
-                      <br>
-                      Total supply :<br>
-                      180,000,000,000,000
-                      <br><br>
-                      Cap :<br>
-                      210,000,000,000,000<br>
-                      (Minable 7oc per transaction)
-                      <br><br>
-                      Network Ethereum Erc20
-                      <br><br>
-                      Contract Address (contract verified)<br>
-                      <a href="https://etherscan.io/token/0x4665e227c521849a202f808E927d1dc5F63C7941">
+        <div class="main">
+            <!--=========White Paper==========-->
+            <div class="white-paper">
+                <h2 class="h2">
+                    White Paper
+                </h2>
+                <h3 class="h3">
+                    Symbol <br> (OCC)
+                    <br> Name <br> (OCCoin)
+                    <br> Total supply :<br> 180,000,000,000,000
+                    <br><br> Cap :<br> 210,000,000,000,000
+                    <br> (Minable 7oc per transaction)
+                    <br><br> Network Ethereum Erc20
+                    <br><br> Contract Address (contract verified)<br>
+                    <a href="https://etherscan.io/token/0x4665e227c521849a202f808E927d1dc5F63C7941">
                       0x4665e227c521849a202f808E927d1dc5F63C7941</a>
-                      <br>
-                      <br>
-                      Website 
-                      <a href="www.occoin.io">OCCoin.io</a>
-                      <br>
-                      Listed on
-                      <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x4665e227c521849a202f808e927d1dc5f63c7941">
+                    <br>
+                    <br> Website
+                    <a href="www.occoin.io">OCCoin.io</a>
+                    <br> Listed on
+                    <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x4665e227c521849a202f808e927d1dc5f63c7941">
                         Uniswap</a>
-                    </h3>
-                  </div>
-        <div class="container">
-          <!--=========Blog==========-->
-          <div class="blog">
-            <h2 class="h2">Our Projects</h2>
-            <div class="blog-card-group">
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-rootala.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Rootala</button>
-                  <h3>
-                    <a href="" class="h3">
+                </h3>
+            </div>
+            <div class="container">
+                <!--=========Blog==========-->
+                <div class="blog">
+                    <h2 class="h2">Our Projects</h2>
+                    <div class="blog-card-group">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-rootala.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">Rootala</button>
+                                <h3>
+                                    <a href="" class="h3">
                       First Step
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    We decided to start networking as the first project of Market Place in order to keep up with the ongoing projects and also to create enthusiasm and motivation for our dear audience and companions.
-                    The name of this project is rootala.
-                    In the Rotala project, only an initial fee is charged for registering a site, and activists can earn significant profits by inviting others to register their site.
-                    Each person can have from 2 hands to 5 direct hands, and the profit received continues up to 8 floors.
-                    For all payments and receipts in this project, our special currency named OCCoin is used.
-                    This project is managed by a person named Mr. mmtd
-                    It should be noted that in the future, the rootala project will be integrated with other software projects such as ocloop and spave.
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
-                    </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-chopo.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Chlock</button>
-                  <h3>
-                    <a href="" class="h3">
+                                </h3>
+                                <p class="blog-text">
+                                    We decided to start networking as the first project of Market Place in order to keep up with the ongoing projects and also to create enthusiasm and motivation for our dear audience and companions. The name of this project is rootala. In the Rotala project,
+                                    only an initial fee is charged for registering a site, and activists can earn significant profits by inviting others to register their site. Each person can have from 2 hands to 5 direct hands, and the profit received
+                                    continues up to 8 floors. For all payments and receipts in this project, our special currency named OCCoin is used. This project is managed by a person named Mr. mmtd It should be noted that in the future, the rootala
+                                    project will be integrated with other software projects such as ocloop and spave.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-chopo.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">Chlock</button>
+                                <h3>
+                                    <a href="" class="h3">
                       After Rootala
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    A store that has everything you need in the future to use and exploit our collection, including production content, mini-applications, registration and points tickets, awards and....
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
-                    </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-chlock.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Chat application</button>
-                  <h3>
-                    <a href="" class="h3">
+                                </h3>
+                                <p class="blog-text">
+                                    A store that has everything you need in the future to use and exploit our collection, including production content, mini-applications, registration and points tickets, awards and....
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-chlock.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">Chat application</button>
+                                <h3>
+                                    <a href="" class="h3">
                       maby comingsoon
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    To create a relationship between the applications and the people who use them, the #Chat super application is being designed and built, which will soon be available to companions and the general public.
-                    Super chat application, like current chat programs, has the ability to send and receive messages in different formats
-                    The remarkable thing about the super chat application is that the audience can communicate with our other applications using the designed APIs and use the applications and features of other applications in this collection.
-                    One of the most special and important apps is the powerful ocloop software
-                    In fact, this software will be used as a branch for all our programs in the form of multi-app in the future.
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
-                    </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-spave.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Spave Games</button>
-                  <h3>
-                    <a href="" class="h3">
+                                </h3>
+                                <p class="blog-text">
+                                    To create a relationship between the applications and the people who use them, the #Chat super application is being designed and built, which will soon be available to companions and the general public. Super chat application, like current chat programs,
+                                    has the ability to send and receive messages in different formats The remarkable thing about the super chat application is that the audience can communicate with our other applications using the designed APIs and use
+                                    the applications and features of other applications in this collection. One of the most special and important apps is the powerful ocloop software In fact, this software will be used as a branch for all our programs
+                                    in the form of multi-app in the future.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-spave.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">Spave Games</button>
+                                <h3>
+                                    <a href="" class="h3">
                       maby comingsoon
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    Collection of spave games!
-                    You are in a world where cats are fighting to reach higher ranks and more rewards.
-                    Everyone has their own spaceship and can enhance it.
-                    In each fight, he has to pay an entry fee and in the end, the winner of the game receives it.
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
-                    </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-ocloop.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">OCLoop</button>
-                  <h3>
-                    <a href="" class="h3">
+                                </h3>
+                                <p class="blog-text">
+                                    Collection of spave games! You are in a world where cats are fighting to reach higher ranks and more rewards. Everyone has their own spaceship and can enhance it. In each fight, he has to pay an entry fee and in the end, the winner of the game receives
+                                    it.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-ocloop.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">OCLoop</button>
+                                <h3>
+                                    <a href="" class="h3">
                       maby comingsoon
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    The strongest and heaviest project that is being prepared in our collection. At Aussie Loop we connect investors and artists directly. Everyone can generate income and earn capital according to their level. Listeners of the works can generate income and so on.
-                    Everything is for everyone's benefit in the osi_loop project!
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
-                    </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-picochi.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Picochi Video Company</button>
-                  <h3>
-                    <a href="" class="h3">
+                                </h3>
+                                <p class="blog-text">
+                                    The strongest and heaviest project that is being prepared in our collection. At Aussie Loop we connect investors and artists directly. Everyone can generate income and earn capital according to their level. Listeners of the works can generate income and
+                                    so on. Everything is for everyone's benefit in the osi_loop project!
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-picochi.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">Picochi Video Company</button>
+                                <h3>
+                                    <a href="" class="h3">
                       maby comingsoon
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    All the videos produced by our collection are displayed in this section.
-                    An application that contains high quality videos with suitable content in different genres.
-                    Like all our programs, this software is also related to other projects.
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
-                    </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="blog-card-banner">
-                  <img src="{{url_for("static" , filename="images/roadmap-octawave.png")}}" alt="" calss="blog-banner-img"></img>
-                </div>              
-                <div class="blog-content-wrapper">
-                  <button class="blog-topic text-tiny">Research Company</button>
-                  <h3>
-                    <a href="" class="h3">
+                                </h3>
+                                <p class="blog-text">
+                                    All the videos produced by our collection are displayed in this section. An application that contains high quality videos with suitable content in different genres. Like all our programs, this software is also related to other projects.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="static/images/roadmap-octawave.png" alt="" calss="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <button class="blog-topic text-tiny">Research Company</button>
+                                <h3>
+                                    <a href="" class="h3">
                       maby comingsoon
                     </a>
-                  </h3>
-                  <p class="blog-text">
-                    And finally,
-                     we hope for a day when we can build our own production and research institute in various scientific fields, including waves and sounds.
-                  </p>
-                  <div class="wrapper-flex">
-                    <div class="profile-wrapper">
-                      <img width="50" src="{{url_for("static", filename="images/profile1.jpg")}}" alt=""></img>
+                                </h3>
+                                <p class="blog-text">
+                                    And finally, we hope for a day when we can build our own production and research institute in various scientific fields, including waves and sounds.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img width="50" src="static/images/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="" class="h4">MR.ALpha</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-01-11">nov 1 2022</time>
+                                            <span calss="separator"></span>
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="PT3M">3min</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="wrapper">
-                      <a href="" class="h4">MR.ALpha</a>
-                      <p class="text-sm">
-                        <time datetime="2022-01-11">nov 1 2022</time>
-                        <span calss="separator"></span>
-                        <ion-icon name="time-outline"></ion-icon>
-                        <time datetime="PT3M">3min</time>
-                      </p>
+                    <div class="download">
+                        <a href="static/dl/white-paper.pdf" class="btn " download>Download PDF</a>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="download">
-              <a href="{{url_for('static', filename='dl/white-paper.pdf')}}" class="btn " download>Download PDF</a>
-            </div>
-          </div>
-          <!--=============== ASIDE ===============-->
-          <div class="aside">
-            <div class="topics">
-              <h2 class="h2">Topics</h2>
+                <!--=============== ASIDE ===============-->
+                <div class="aside">
+                    <div class="topics">
+                        <h2 class="h2">Topics</h2>
 
-              <a href="#" class="topic-btn">
-                <div class="icon-box">
-                  <ion-icon name="server-outline"></ion-icon>
-                </div>
-                <p>Database</p>
-              </a>
+                        <a href="#" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="server-outline"></ion-icon>
+                            </div>
+                            <p>Database</p>
+                        </a>
 
-              <a href="#" class="topic-btn">
-                <div class="icon-box">
-                  <ion-icon name="accessibility-outline"></ion-icon>
-                </div>
+                        <a href="#" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="accessibility-outline"></ion-icon>
+                            </div>
 
-                <p>Accessibility</p>
-              </a>
+                            <p>Accessibility</p>
+                        </a>
 
-              <a href="#" class="topic-btn">
-                <div class="icon-box">
-                  <ion-icon name="rocket-outline"></ion-icon>
-                </div>
+                        <a href="#" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="rocket-outline"></ion-icon>
+                            </div>
 
-                <p>Web Performance</p>
-              </a>
-            </div>
+                            <p>Web Performance</p>
+                        </a>
+                    </div>
 
-            <div class="tags">
-              <h2 class="h2">Tags</h2>
+                    <div class="tags">
+                        <h2 class="h2">Tags</h2>
 
-              <div class="wrapper">
-                <button class="hashtag">#mongodb</button>
-                <button class="hashtag">#nodejs</button>
-                <button class="hashtag">#a11y</button>
-                <button class="hashtag">#mobility</button>
-                <button class="hashtag">#inclusion</button>
-                <button class="hashtag">#webperf</button>
-                <button class="hashtag">#optimize</button>
-                <button class="hashtag">#performance</button>
-              </div>
-            </div>
+                        <div class="wrapper">
+                            <button class="hashtag">#mongodb</button>
+                            <button class="hashtag">#nodejs</button>
+                            <button class="hashtag">#a11y</button>
+                            <button class="hashtag">#mobility</button>
+                            <button class="hashtag">#inclusion</button>
+                            <button class="hashtag">#webperf</button>
+                            <button class="hashtag">#optimize</button>
+                            <button class="hashtag">#performance</button>
+                        </div>
+                    </div>
 
-            <div class="contact">
-              <h2 class="h2">Let's Talk</h2>
+                    <div class="contact">
+                        <h2 class="h2">Let's Talk</h2>
 
-              <div class="wrapper">
-                <p>
-                  Do you want to learn more about how I can help your company
-                  overcome problems? Let us have a conversation.
-                </p>
-                <ul class="social-link">
-                  <li>
-                    <a href="#" class="icon-box discord">
-                      <ion-icon name="logo-discord"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="icon-box twitter">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
+                        <div class="wrapper">
+                            <p>
+                                Do you want to learn more about how I can help your company overcome problems? Let us have a conversation.
+                            </p>
+                            <ul class="social-link">
+                                <li>
+                                    <a href="#" class="icon-box discord">
+                                        <ion-icon name="logo-discord"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-box twitter">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
 
-                  <li>
-                    <a href="#" class="icon-box facebook">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                                <li>
+                                    <a href="#" class="icon-box facebook">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <div class="newsletter">
-              <h2 class="h2">Newsletter</h2>
-              <div class="wrapper">
-                <p>
-                  Subscribe to our newsletter to be among the first to keep up
-                  with the latest updates.
-                </p>
-                <form action="">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    required
-                  />
+                    <div class="newsletter">
+                        <h2 class="h2">Newsletter</h2>
+                        <div class="wrapper">
+                            <p>
+                                Subscribe to our newsletter to be among the first to keep up with the latest updates.
+                            </p>
+                            <form action="">
+                                <input type="email" name="email" placeholder="Email Address" required />
 
-                  <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary">
                     Subscribe
                   </button>
-                </form>
-              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </main>
 
     <!--=============== Footer ===============-->
     <footer>
-      <div class="container">
-        <div class="wrapper">
-          <a href="#" class="logo"> OC <span>Coin</span></a>
-          <p class="footer-text">
-            Learn about Web accessibility, Web performance, and Database
-            management.
-          </p>
+        <div class="container">
+            <div class="wrapper">
+                <a href="#" class="logo"> OC <span>Coin</span></a>
+                <p class="footer-text">
+                    Learn about Web accessibility, Web performance, and Database management.
+                </p>
+            </div>
+
+            <div class="wrapper">
+                <p class="footer-title">Quick Links</p>
+
+                <ul>
+                    <li>
+                        <a href="#" class="footer-link">Advertise with us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="wrapper">
+                <p class="footer-title">Legal Stuff</p>
+
+                <ul>
+                    <li>
+                        <a href="#" class="footer-link">Privacy Notice</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms Of Use</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="wrapper">
-          <p class="footer-title">Quick Links</p>
-
-          <ul>
-            <li>
-              <a href="#" class="footer-link">Advertise with us</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">About Us</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="wrapper">
-          <p class="footer-title">Legal Stuff</p>
-
-          <ul>
-            <li>
-              <a href="#" class="footer-link">Privacy Notice</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Cookie Policy</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms Of Use</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="copyright">&copy; Copyright 2023 <a href="#">JCatArt</a></p>
+        <p class="copyright">&copy; Copyright 2023 <a href="#">JCatArt</a></p>
     </footer>
 
-        </div>
-      </div>
+    </div>
+    </div>
     </main>
-    <!--=========Main script==========-->   
-    <script src="{{ url_for('static', filename='js/script.js')}}">
+    <!--=========Main script==========-->
+    <script src="static/js/script.js>
     </script>
     <!--=========ionicon==========-->
-    <script type= "module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    <script type= " module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js ">
     </script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js ">
     </script>
   </body>
 </html>
