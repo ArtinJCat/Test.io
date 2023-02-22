@@ -581,16 +581,17 @@ footer .container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+    margin-left: 6rem;
 }
 
 footer .wrapper {
-    text-align: center;
+    text-align: left;
 }
 
 .footer-text {
     color: var(--foreground-tertiary);
     max-width: 300px;
-    margin: auto;
+    margin: 0;
     align-items: left;
 }
 
@@ -604,10 +605,11 @@ footer .wrapper {
     color: var(--foreground-tertiary);
 }
 
-.footer-plus {
-    margin-left: 12rem;
+
+/* .footer-plus {
+    margin-inline: auto;
     text-align: left;
-}
+} */
 
 .footer-link:hover {
     color: var(--accent);
