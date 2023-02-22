@@ -143,6 +143,7 @@ html {
 .h3 {
     font-size: var(--fs-3);
     font-weight: 700;
+    color: var(--foreground-tertiary);
 }
 
 .h4 {
@@ -229,7 +230,7 @@ html {
 header {
     background-image: url(../images/mob-nav.png);
     background-size: cover;
-    border-radius: 10px 0;
+    border-radius: 30px 0;
     margin-bottom: 0.1rem;
 }
 
@@ -293,7 +294,7 @@ header .btn-group {
 .mobile-nav {
     position: fixed;
     inset: 0;
-    background: var(--background-primary);
+    background: var(--foreground-primary);
     padding: 70px 20px;
     overflow: auto;
     overscroll-behavior: contain;
@@ -304,6 +305,9 @@ header .btn-group {
 }
 
 .mobile-nav.active {
+    background-image: url(../images/mobile-navbar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     transform: translate(0);
     visibility: visible;
 }
@@ -347,7 +351,7 @@ header .btn-group {
     padding-top: 0.8rem;
     padding-bottom: 2rem;
     text-align: center;
-    border-radius: 0 10px;
+    border-radius: 0 30px;
     background-repeat: no-repeat;
     margin-bottom: 0.1rem;
 }
@@ -386,7 +390,7 @@ header .btn-group {
     background-size: cover;
     padding-bottom: 1rem;
     margin-bottom: 0.1rem;
-    border-radius: 10px 0;
+    border-radius: 30px 0;
 }
 
 .white-paper {
@@ -396,7 +400,7 @@ header .btn-group {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    border-radius: 10px 0;
+    border-radius: 30px 0;
 }
 
 .white-paper .h2 {
@@ -569,7 +573,7 @@ footer {
     background: var(--background-primary);
     background-image: url(../images/footer.png);
     background-size: cover;
-    border-radius: 0 10px 30px 30px;
+    border-radius: 0 30px 30px 30px;
 }
 
 footer .container {
@@ -584,19 +588,25 @@ footer .wrapper {
 }
 
 .footer-text {
-    color: var(--foreground-secondary);
+    color: var(--foreground-tertiary);
     max-width: 300px;
     margin: auto;
+    align-items: left;
 }
 
 .footer-title {
-    color: var(--foreground-primary);
+    color: var(--foreground-tertiary);
     font-weight: 700;
     margin-bottom: 0.4rem;
 }
 
 .footer-link {
-    color: var(--foreground-secondary);
+    color: var(--foreground-tertiary);
+}
+
+.footer-plus {
+    margin-left: 12rem;
+    text-align: left;
 }
 
 .footer-link:hover {
@@ -604,7 +614,7 @@ footer .wrapper {
 }
 
 .copyright {
-    color: var(--foreground-secondary);
+    color: var(--foreground-tertiary);
     font-size: var(--fs-4);
     text-align: center;
     padding: 1rem;

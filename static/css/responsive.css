@@ -172,11 +172,12 @@
         color: var(--accent);
     }
     .theme-btn-desktop {
+        margin-top: 1rem;
         position: relative;
         background: var(--background-secondary);
         color: var(--white);
         width: 65px;
-        height: 26px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
